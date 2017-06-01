@@ -46,15 +46,15 @@ Pre-requisite: [Download WAS Liberty](/docs/Downloading-WAS-Liberty.md)
 
 Use the following to start the server and run the application:
 
+background:
+
 ```bash
-$ export WLP_USER_DIR=/path/to/sample.swagger/swagger-sample-wlpcfg
-$ /path/to/wlp/bin/server run swaggerSample
+$ mvn liberty:start-server
 ```
 
-* `run` runs the server in the foreground.
-* `start` runs the server in the background. Look in the logs directory for console.log to see what's going on, e.g.
+foreground:
 
 ```bash
-$ tail -f ${WLP_USER_DIR}/servers/swaggerSample/logs/console.log
+$ mvn liberty:run-server
 ```
 

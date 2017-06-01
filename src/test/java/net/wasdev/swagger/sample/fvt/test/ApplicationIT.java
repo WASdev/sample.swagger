@@ -10,17 +10,19 @@ import javax.ws.rs.core.Response;
 
 import org.junit.Test;
 
-public class ApplicationTest {
+public class ApplicationIT {
 	
 	@Test
 	public void testContacts(){
 		//check if endpoint works, should return empty JSON Array
+		System.out.println("***URL***: " + getResponse("contacts"));
 		assertEquals("[]", getResponse("contacts"));
 	}
 	
 	@Test
 	public void testTasks(){
 		//check if endpoint works, should return empty JSON Array
+		System.out.println("***URL***: " + getResponse("tasks"));
 		assertEquals("[]", getResponse("tasks"));
 	}
 	
@@ -28,6 +30,7 @@ public class ApplicationTest {
 	public void verifyDocs() {
 		//verify that auto-generated Swagger contains both API's
 		String docs = getDocs();
+		System.out.println("***URL***: " + docs);
 		System.out.println(docs);
 		assertNotNull(docs);
 		assertTrue(docs.contains("Contacts API"));
