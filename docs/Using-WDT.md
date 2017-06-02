@@ -34,12 +34,12 @@ This sample can be built using [Maven](#building-with-maven).
 
 ###### Import Maven projects into WDT
 
-1.  In the Git Repository view, expand the sample repo to see the "Working Directory" folder
+1.  In the Git Repository view, expand the sample repo to see the "Working Tree" folder
 2.  Right-click on this folder, and select *Copy path to Clipboard*
 3.  Select menu *File -> Import -> Maven -> Existing Maven Projects*
 4.  In the Root Directory textbox, Paste in the repository directory.
-5.  Select *Browse...* button and select *Finish* (confirm it finds 3 pom.xml files)
-6.  This will create 3 projects in Eclipse: swagger-sample, swagger-sample-application, and swagger-sample-wlpcfg
+5.  Select *Browse...* button and select *Finish* (confirm it finds 1 pom.xml files)
+6.  This will create 1 projects in Eclipse: swagger-sample
 
 :star: *Note:* If you did not use Eclipse/WDT to clone the git repository, follow from step 3, but navigate to the cloned repository directory rather than pasting its name in step 4.
 
