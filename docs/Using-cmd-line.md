@@ -26,6 +26,12 @@ If you want to also run the functional tests then you need to [Download WAS Libe
 $ mvn -DlibertyRoot=<LibertyInstallLocation> install
 ```
 
+You can skip tests with the following:
+
+```bash
+$ mvn install -DskipTests=true
+```
+
 In addition to publishing the war to the local maven repository, the built war file is copied into the apps directory of the server configuration located in the swagger-sample-wlpcfg directory:
 
 ```text
