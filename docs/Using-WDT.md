@@ -34,6 +34,8 @@ This sample can be built using [Maven](#building-with-maven).
 
 ###### Import Maven projects into WDT
 
+These instructions are written for WDT 17.0.0.2 or later that has improved Maven project integration.
+
 1.  In the Git Repository view, expand the sample repo to see the "Working Tree" folder
 2.  Right-click on this folder, and select *Copy path to Clipboard*
 3.  Select menu *File -> Import -> Maven -> Existing Maven Projects*

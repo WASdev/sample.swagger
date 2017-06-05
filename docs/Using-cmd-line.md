@@ -28,16 +28,17 @@ You can skip tests with the following command:
 $ mvn install -DskipTests=true
 ```
 
-In addition to publishing the war to the local maven repository, the built war file is copied into the apps directory of the server configuration located in the swagger-sample-wlpcfg directory:
+In addition to publishing the WAR to the local maven repository, the built WAR file is copied into the apps directory of the server configuration located in the swagger-sample directory:
 
 ```text
 target
+ +- swagger-sample-1.0.zip                                 <-- packaged server file containing the server, application, and configuration
  +- servers
     +- liberty
         +- wlp
             +- usr
                 +- server
-                    +- swaggerSample                            <-- specific server configuration
+                    +- swaggerSample                       <-- specific server configuration
                     +- server.xml                          <-- server configuration
                     +- apps                                <- directory for applications
                         +- swagger-sample-application.war      <- sample application
