@@ -28,7 +28,7 @@ If the sample git repository hasn't been cloned yet, WDT has git tools integrate
 ### Building the sample in Eclipse
 :pushpin: [Switch to cmd line example](/docs/Using-cmd-line.md/#building-the-sample)
 
-This sample can be built using [Maven](#building-with-maven).
+This sample can be built using Maven.
 
 #### Building with [Maven](http://maven.apache.org/)
 

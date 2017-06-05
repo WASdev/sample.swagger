@@ -12,7 +12,7 @@ $ git clone https://github.com/WASdev/sample.swagger.git
 ### Building the sample
 :pushpin: [Switch to Eclipse example](/docs/Using-WDT.md/#building-the-sample-in-eclipse)
 
-This sample can be built using [Maven](#apache-maven-commands).
+This sample can be built using Maven.
 
 ###### [Apache Maven](http://maven.apache.org/) commands
 
@@ -40,7 +40,7 @@ target
                 +- swaggerSample
                     +- server.xml                          <-- server configuration
                     +- apps                                <- directory for applications
-                        +- swagger-sample-application.war      <- sample application
+                        +- swagger-sample.war.xml          <- loose sample application
                     +- logs                                <- created by running the server locally
                     +- workarea                            <- created by running the server locally
 ```

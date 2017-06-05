@@ -14,5 +14,5 @@
 
     <applicationMonitor updateTrigger="mbean"/>
 
-    <webApplication id="swagger-sample-application" location="swagger-sample-application.war" name="swagger-sample-application"/>
+    <webApplication id="swagger-sample" location="swagger-sample.war" name="swagger-sample"/>
 </server>

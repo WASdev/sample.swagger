@@ -4,11 +4,11 @@ This sample contains a few ways of how to use Swagger documentation within Liber
 two individual servlets:  the JAX-RS servlet is used to handle requests to a Tasks API, which allows user to create, view and delete Task objects, while the second servlet is an extension of a HTTPServlet and is used to resond to requests for a Contacts API.
 Contacts API lets you create, view and update Contact objects.
 
-[TasksResource](/swagger-sample-application/src/main/java/net/wasdev/swaggersample/jaxrs/TasksResource.java) is a
+[TasksResource](/swagger-sample/src/main/java/net/wasdev/swaggersample/jaxrs/TasksResource.java) is a
 JAX-RS resouce classs that uses both JAX-RS and Swagger annotations to document the API.
 
-Documentation for HTTPServlet based API [ContactsServlet](/swagger-sample-application/src/main/java/net/wasdev/swaggersample/servlet/ContactsServlet.java)
-is provided using Swagger stub file [swagger.json](/swagger-sample-application/src/main/webapp/META-INF/stub/swagger.json)
+Documentation for HTTPServlet based API [ContactsServlet](/swagger-sample/src/main/java/net/wasdev/swaggersample/servlet/ContactsServlet.java)
+is provided using Swagger stub file [swagger.json](/swagger-sample/src/main/webapp/META-INF/stub/swagger.json)
 
 ## Getting Started
 
@@ -21,7 +21,7 @@ to interact with the sample. Default credentials are login: user, password: demo
 
 ## Notice
 
-© Copyright IBM Corporation 2016.
+© Copyright IBM Corporation 2016, 2017.
 
 ## License
 
