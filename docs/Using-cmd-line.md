@@ -33,12 +33,11 @@ In addition to publishing the WAR to the local maven repository, the built WAR f
 ```text
 target
  +- swagger-sample-1.0.zip                                 <-- packaged server file containing the server, application, and configuration
- +- servers
-    +- liberty
-        +- wlp
-            +- usr
-                +- server
-                    +- swaggerSample                       <-- specific server configuration
+ +- liberty
+    +- wlp
+        +- usr
+            +- server
+                +- swaggerSample
                     +- server.xml                          <-- server configuration
                     +- apps                                <- directory for applications
                         +- swagger-sample-application.war      <- sample application
