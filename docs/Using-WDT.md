@@ -42,7 +42,7 @@ These instructions are written for WDT 17.0.0.2 or later that has improved Maven
 4.  In the Root Directory textbox, Paste in the repository directory.
 5.  Select *Browse...* button and select *Finish* (confirm it finds 1 pom.xml files)
 6.  Click *Yes* to the WebSphere Liberty dialog to automatically create server in the Servers view for this project.
-7.. This will create 1 projects in Eclipse: swagger-sample
+7. This will create 1 project in Eclipse: swagger-sample
 
 :star: *Note:* If you did not use Eclipse/WDT to clone the git repository, follow from step 3, but navigate to the cloned repository directory rather than pasting its name in step 4.
 
