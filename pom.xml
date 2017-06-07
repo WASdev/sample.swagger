@@ -76,7 +76,8 @@
         <!-- Update this to match the port number in the swaggerSample server.xml 
             This is needed to run the tests -->
         <libertyTestPort>9081</libertyTestPort>
-        <skipFVT>false</skipFVT>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
     </properties>
 
     <build>
