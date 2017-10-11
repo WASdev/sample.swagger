@@ -21,7 +21,7 @@ to interact with the sample. Default credentials are login: user, password: demo
 
 ## Running with Gradle
 
-This project can also be built and run with Gradle. The provided `build.gradle` file applies the Liberty Gradle Plug-in and is configured to automatically download and install Liberty with Java EE Web Profile 7 runtime from Maven Central. The Liberty Gradle Plug-in has built-in tasks that can be used to create, configure, and run the application on the Liberty server.
+This project can also be built and run with [Gradle]. The provided `build.gradle` file applies the [Liberty Gradle Plug-in] and is configured to automatically download and install the Liberty Java EE Web Profile 7 runtime from Maven Central. The Liberty Gradle Plug-in has built-in tasks that can be used to create, configure, and run the application on the Liberty server.
 
 Use the following steps to run the application with Gradle:
 
@@ -67,3 +67,5 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ````
+[Liberty Gradle Plug-in]: https://github.com/WASdev/ci.gradle
+[Gradle]: https://gradle.org
