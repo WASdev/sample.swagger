@@ -4,7 +4,7 @@ apply plugin: 'liberty'
 group = 'net.wasdev.wlp.swagger-sample'
 version = '1.0-SNAPSHOT'
 
-description = """WAS Liberty Sample - Using Swagger in Liberty"""
+description = "WAS Liberty Sample - Using Swagger in Liberty"
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -49,6 +49,7 @@ liberty {
         bootstrapProperties = ['liberty.test.port': libertyTestPort, 'default.http.port': libertyTestPort]
         configFile = file("src/main/liberty/config/server.xml")
         apps = [war]
+        name = 'swaggerSample'
         features {
             name = ['apiDiscovery-1.0']
             acceptLicense = true
@@ -95,4 +96,5 @@ installApps.dependsOn 'installFeature'
 check.dependsOn 'integrationTest'
 integrationTest.dependsOn 'libertyStart', 'testClasses'
 integrationTest.finalizedBy 'libertyStop'
+libertyStart.dependsOn 'libertyPackage'
 libertyStart.finalizedBy 'printMessageAboutRunningServer'
