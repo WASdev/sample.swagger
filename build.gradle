@@ -9,7 +9,7 @@ description = """WAS Liberty Sample - Using Swagger in Liberty"""
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 tasks.withType(JavaCompile) {
-	options.encoding = 'UTF-8'
+    options.encoding = 'UTF-8'
 }
 
 buildscript {
@@ -34,23 +34,27 @@ ext {
     // Liberty server properties
     wlpServerName = 'swaggerSample'
     serverDirectory = "${project.buildDir}/wlp/usr/servers/${wlpServerName}"
-    testServerHttpPort = 9081
-    testServerHttpsPort = 9444
-
+    libertyTestPort = "9081"
     // This is set in the ibm-web-ext.xml file
     warContext = 'swagger-sample'
 
 }
 
 war {
-	archiveName = baseName + '.' + extension
+    archiveName = baseName + '.' + extension
 }
 
 liberty {
     server{
+        System.setProperty("liberty.test.port", libertyTestPort)
+        bootstrapProperties = ['liberty.test.port': libertyTestPort, 'default.http.port': libertyTestPort]
         configFile = file("src/main/liberty/config/server.xml")
         name = 'LibertyProjectServer'
         apps = [war]
+        features {
+            name = ['apiDiscovery-1.0']
+            acceptLicense = true
+        }
      }
 }
 
@@ -79,12 +83,12 @@ task integrationTest(type: Test) {
     include '**/it/**'
     exclude '**/unit/**'
 
-    systemProperties = ['liberty.test.port': testServerHttpPort, 'war.context': warContext]
+    systemProperties = ['liberty.test.port': libertyTestPort]
 }
 
 task printMessageAboutRunningServer {
     doLast {
-        println "The server is now running at http://localhost:${testServerHttpPort}/${warContext}"
+        println "The server is now running at http://localhost:${libertyTestPort}/${warContext}"
         println "To stop the server run 'gradle libertyStop'"
     }
 }
