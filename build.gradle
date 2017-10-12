@@ -92,7 +92,6 @@ task printMessageAboutRunningServer {
     }
 }
 
-installApps.dependsOn 'installFeature'
 check.dependsOn 'integrationTest'
 integrationTest.dependsOn 'libertyStart', 'testClasses'
 integrationTest.finalizedBy 'libertyStop'
