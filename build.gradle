@@ -34,7 +34,7 @@ ext {
     // Liberty server properties
     wlpServerName = 'swaggerSample'
     serverDirectory = "${project.buildDir}/wlp/usr/servers/${wlpServerName}"
-    libertyTestPort = "9081"
+    libertyTestPort = 9081
     // This is set in the ibm-web-ext.xml file
     warContext = 'swagger-sample'
 
@@ -46,7 +46,7 @@ war {
 
 liberty {
     server{
-        bootstrapProperties = ['liberty.test.port': libertyTestPort, 'default.http.port': libertyTestPort]
+        bootstrapProperties = ['default.http.port': libertyTestPort]
         configFile = file("src/main/liberty/config/server.xml")
         apps = [war]
         name = 'swaggerSample'
