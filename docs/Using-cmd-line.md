@@ -39,10 +39,10 @@ target
             +- server
                 +- swaggerSample
                     +- server.xml                          <-- server configuration
-                    +- apps                                <- directory for applications
-                        +- swagger-sample.war.xml          <- loose sample application
-                    +- logs                                <- created by running the server locally
-                    +- workarea                            <- created by running the server locally
+                    +- apps                                <-- directory for applications
+                        +- swagger-sample.war.xml          <-- loose sample application
+                    +- logs                                <-- created by running the server locally
+                    +- workarea                            <-- created by running the server locally
 ```
 
 ### Running the application locally with Maven
@@ -79,10 +79,10 @@ build
         +- servers
             +- swaggerSample
                 +- server.xml                          <-- server configuration
-                +- apps                                <- directory for applications
-                    +- swagger-sample.war.xml          <- loose sample application
-                +- logs                                <- created by running the server locally
-                +- workarea                            <- created by running the server locally
+                +- apps                                <-- directory for applications
+                    +- swagger-sample.war.xml          <-- loose sample application
+                +- logs                                <-- created by running the server locally
+                +- workarea                            <-- created by running the server locally
 ```
 ### Running the application locally with Gradle
 
