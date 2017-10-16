@@ -8,3 +8,5 @@
 /.gradle/
 /.classpath
 /.factorypath
+build/
+bin/
