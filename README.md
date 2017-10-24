@@ -13,7 +13,7 @@ is provided using Swagger stub file [swagger.json](/swagger-sample/src/main/weba
 ## Getting Started
 
 Browse the code to see what it does, or build and run it yourself:
-* [Building and running on the command line](/docs/Using-cmd-line.md)
+* [Building and running on the command line using Maven and Gradle](/docs/Using-cmd-line.md)
 * [Building and running using Eclipse and WebSphere Development Tools (WDT)](/docs/Using-WDT.md)
 
 Once the server has been started, go to [REST API Discovery](https://developer.ibm.com/wasdev/blog/2016/02/17/exposing-liberty-rest-apis-swagger/) Explorer at [https://localhost:9444/ibm/api/explorer/](https://localhost:9444/ibm/api/explorer/)
