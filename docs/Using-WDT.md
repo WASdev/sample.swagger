@@ -75,7 +75,7 @@ These instructions are written for WDT 17.0.0.2 or later that has improved Maven
 2. Right-click on this folder, and select *Copy path to Clipboard*
 3. Select menu *File -> Import -> Gradle -> Existing Gradle Projects*
 4. In the Root Directory textbox, Paste in the repository directory.
-5. Optionally hit *Next* to apply a specific Gradle distribution, otherwise hit *Finish* to import. By default, Eclipse will use the included Gradle wrapper.
+5. To apply a specific Gradle distribution, click *Next* and configure. Click *Finish* when ready to import the project. By default, Eclipse will use the included Gradle wrapper.
 
 :star: *Note:* If you did not use Eclipse/WDT to clone the git repository, follow from step 3, but navigate to the cloned repository directory rather than pasting its name in step 4. 
 
