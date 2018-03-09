@@ -53,7 +53,7 @@ These instructions are written for WDT 17.0.0.2 or later that has improved Maven
 3. In the *Goals* section enter "install"
 4. Click *Run*
 
-### Running the application locally
+#### Running the application locally in Maven
 :pushpin: [Switch to cmd line example](/docs/Using-cmd-line.md/#running-the-application-locally)
 
 ###### Running Liberty and the sample application from WDT
@@ -62,6 +62,35 @@ These instructions are written for WDT 17.0.0.2 or later that has improved Maven
 2.  Right-click -> *Run As... -> Run On Server*
 3.  Select the appropriate server (as created above) and select *Finish*
 
+#### Building with [Gradle](https://gradle.org/)
+
+###### Download the Eclipse Buildship Grab to support Gradle
+1. Select menu *Help -> Eclipse Marketplace...*
+2. Search for "Buildship Integration 2.0" and install
+
+
+###### Import Gradle projects into WDT
+
+1. In the Git Repository view, expand the sample repo to see the "Working Tree" folder.
+2. Right-click on this folder, and select *Copy path to Clipboard*
+3. Select menu *File -> Import -> Gradle -> Existing Gradle Projects*
+4. In the Root Directory textbox, Paste in the repository directory.
+5. To apply a specific Gradle distribution, click *Next* and configure. Click *Finish* when ready to import the project. By default, Eclipse will use the included Gradle wrapper.
+
+:star: *Note:* If you did not use Eclipse/WDT to clone the git repository, follow from step 3, but navigate to the cloned repository directory rather than pasting its name in step 4. 
+
+###### Running Gradle tasks in Eclipse
+
+:pushpin: [Switch to cmd line example](/docs/Using-cmd-line.md/#building-the-sample-with-gradle)
+
+1. Everything can be done in the Gradle Tasks view. If you have this view, skip ahead to step 4.
+2. Select menu *Window -> Show View -> Other...*
+3. Navigate to *Gradle Tasks* in the Gradle folder, or type it into the text filter.
+4. Click on *sample.swagger* to expand its grouped tasks.
+5. To run a `gradle build`, click on the `build` task located inside the build group.
+6. To start a server with a `gradle libertyStart`, click on the `libertyStart` task inside the liberty group. 
+
 #### Tips
 
 * When importing the existing maven project into Eclipse, Eclipse will (by default) "helpfully" add this project to an (extraneous) ear. To turn this off, go to Preferences -> Java EE -> Project, and uncheck "Add project to an EAR" before you import the project. If you forgot to do this, just delete the ear project; no harm.
+

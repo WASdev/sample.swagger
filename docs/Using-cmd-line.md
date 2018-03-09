@@ -63,6 +63,7 @@ $ mvn liberty:run-server
 ```
 
 ### Building the sample with Gradle
+:pushpin: [Switch to Eclipse example](/docs/Using-WDT.md/#building-with-gradle)
 
 This project can also be built and run with [Gradle]. The provided `build.gradle` file applies the [Liberty Gradle Plug-in] and is configured to automatically download and install the Liberty Java EE Web Profile 7 runtime from Maven Central. The Liberty Gradle Plug-in has built-in tasks that can be used to create, configure, and run the application on the Liberty server.
 
