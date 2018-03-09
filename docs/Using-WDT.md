@@ -53,7 +53,7 @@ These instructions are written for WDT 17.0.0.2 or later that has improved Maven
 3. In the *Goals* section enter "install"
 4. Click *Run*
 
-### Running the application locally in Maven
+#### Running the application locally in Maven
 :pushpin: [Switch to cmd line example](/docs/Using-cmd-line.md/#running-the-application-locally)
 
 ###### Running Liberty and the sample application from WDT
